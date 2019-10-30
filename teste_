@@ -1,0 +1,118 @@
+package teste_;
+
+
+  import java.util.Scanner;
+public class Teste_ {
+
+   
+    public static void main(String[] args) {
+    Scanner ler = new Scanner(System.in);
+    System.out.println("Bem vindo a Geek Burguer");
+    System.out.println("Cliente Cadastrado? S - Sim | N - Não");
+    String op = ler.next();
+    op = op.toUpperCase();
+    if("S".equals(op)){
+        System.out.println("Estamos verificando seu usuario, aguarde um instante...");
+        System.out.println("Precisamos atualizar seu cadastro");
+        System.out.println("Possui alguma restrição? S - Sim | N - Não");
+        String opr = ler.next();
+        opr = opr.toUpperCase();
+        if("S".equals(opr)){
+            int opres1;
+       
+            do{
+            System.out.println("Digite a opção correspondente");
+            System.out.println("1 - Soja");
+            System.out.println("2 - Laticínios");
+            System.out.println("3 - Glúten");
+            System.out.println("4 - Açúcar");
+            System.out.println("0 - Para sair desta escolha");
+            opres1 = ler.nextInt();
+            switch (opres1){
+                case 1:
+                    System.out.println("Alérgico a Soja");
+                    System.out.println("Produto: Darth Bacon sem ingredientes com Soja");
+                    break;
+                case 2:
+                    System.out.println("Alérgico a Laticínios");
+                    System.out.println("Produto: Darth Bacon sem ingredientes com Laticínios");
+                    break;
+                case 3:
+                    System.out.println("Alérgico a Glúten");
+                    System.out.println("Produto: Darth Bacon sem ingredientes com Glúten");
+                    break;
+                case 4:
+                    System.out.println("Alérgico a Açúcar");
+                    System.out.println("Produto: Darth Bacon sem ingredientes com Açúcar");
+                    break;
+                case 0:
+                    System.out.println("Obrigado pela informação!");
+                    break;
+                default:
+                    System.out.println("Escolha inválida");
+                    break;
+            }
+            }
+            while (opres1 != 0);
+        }
+       else{
+            System.out.println("Usuário sem restrições");
+            System.out.println("Produto: Darth Bacon");
+        }
+    }
+   
+    else{
+        System.out.println("Iremos realizar o seu cadastro");
+        System.out.println("Digite seu nome");
+        String nome = ler.next();
+        System.out.println("Possui alguma restrição? S - Sim | N - Não");
+        String opr = ler.next();
+        opr = opr.toUpperCase();
+        if("S".equals(opr)){
+            int opres;
+       
+            do{
+            System.out.println("Digite a opção correspondente");
+            System.out.println("1 - Soja");
+            System.out.println("2 - Laticínios");
+            System.out.println("3 - Glúten");
+            System.out.println("4 - Açúcar");
+            System.out.println("0 - Para sair desta escolha");
+            opres = ler.nextInt();
+            switch (opres){
+                case 1:
+                    System.out.println("Alérgico a Soja");
+                    System.out.println("Produto: Darth Bacon sem ingredientes com Soja");
+                    break;
+                case 2:
+                    System.out.println("Alérgico a Laticínios");
+                    System.out.println("Produto: Darth Bacon sem ingredientes com Laticínios");
+                    break;
+                case 3:
+                    System.out.println("Alérgico a Glúten");
+                    System.out.println("Produto: Darth Bacon sem ingredientes com Glúten");
+                    break;
+                case 4:
+                    System.out.println("Alérgico a Açúcar");
+                    System.out.println("Produto: Darth Bacon sem ingredientes com Açúcar");
+                    break;
+                case 0:
+                    System.out.println("Obrigado pela informação!");
+                    break;
+                default:
+                    System.out.println("Escolha inválida");
+                    break;
+            }
+           
+                   
+            }
+            while (opres != 0);
+           
+        }
+        else{
+            System.out.println("Usuário sem restrições");
+            System.out.println("Produto: Darth Bacon");
+        }
+    }
+    }
+    }
